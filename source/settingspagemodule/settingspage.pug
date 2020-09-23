@@ -1,0 +1,15 @@
+//- settingspage structure
+extends ../slideinframemodule/slideinframe.pug
+block content
+    #settingspage-content
+        h1 Your Settings 
+        img#picture-display(src="https://avatars0.githubusercontent.com/u/5329953?s=460&u=f4f24297938ccd56a966185a7bae7bd558f10c8a&v=4")
+        h2 ID
+        #id-display.text-display-frame.click-button
+            .display-frame-content
+            svg.copy-icon: use(href="#svg-copy-icon")
+        
+        h2 Secret Manager Service
+        input#secret-manager-input(type="text" value="https://secrets.extensivlyon.coffee")
+        h2 Data Manager Service
+        input#data-manager-input(type="text" value="https://data.extensivlyon.coffee")

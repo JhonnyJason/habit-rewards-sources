@@ -1,0 +1,10 @@
+//- editdeedpage structure
+extends ../slideinframemodule/slideinframe.pug
+block content
+    #editdeedpage-content
+        h1 Edit your deed!
+        #deed-edit
+            include ../deedsmodule/deededit.pug
+        #delete-button
+            .click-button
+                svg#delete-button-icon: use(href="#svg-trash-icon")

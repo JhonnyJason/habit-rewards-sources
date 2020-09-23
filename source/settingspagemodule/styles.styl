@@ -1,0 +1,32 @@
+// settingspage styles
+picture-size = 90px
+
+copy-icon-size = 15px
+
+#settingspage-content
+    input
+        margin-top: 0
+    h2
+        margin-top: 5px        
+
+#id-display
+    width 100%
+    background-color cd-dark
+    display flex
+    padding 7px
+    box-sizing: border-box
+
+    .display-frame-content
+        text-overflow: ellipsis
+        overflow hidden
+        width "calc(100% - %s)" % copy-icon-size
+    .copy-icon
+        width copy-icon-size
+        height copy-icon-size
+
+#picture-display
+    width 90px
+    height 90px
+    background-color cd-bright
+    border-radius: 50%
+    outline none

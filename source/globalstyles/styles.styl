@@ -1,0 +1,91 @@
+/*==========================================================
+Font
+==========================================================*/
+@font-face
+    font-family: "SourceSans Pro"
+    src: url("/font/SourceSansPro-Regular.ttf")
+
+/*==========================================================
+Colors
+==========================================================*/
+cd-dark = #113137
+cd-bright = #EFEFC7
+cd-flash = #B73783
+
+
+/*==========================================================
+Colors
+==========================================================*/
+header-height = 90px
+max-content-width = 900px
+mobile-side-padding = 15px
+
+/*==========================================================
+General Tag Styles
+==========================================================*/
+body
+    color cd-bright
+    text-align: center
+    font-family: "SourceSans Pro", sans-serif
+    font-size: 12pt
+    height 100vh
+    width 100%
+    overflow hidden
+
+h1
+    font-size: 17pt
+    padding-top: 20pt
+    padding-bottom: 7pt
+    padding-left: 20pt
+    padding-right: 20pt
+    user-select none
+h2
+    font-size: 15pt
+    padding-top: 15pt
+    padding-bottom: 7pt
+    padding-left: 20pt
+    padding-right: 20pt
+    user-select none
+
+p
+    font-size: 12pt
+    padding-top: 10pt
+    padding-bottom: 7pt
+    padding-left: 20pt
+    padding-right: 20pt
+    user-select none
+
+
+input
+    text-overflow: ellipsis;
+    padding: 7px
+    box-sizing: border-box
+    font-size: 12pt
+    color cd-bright
+    background-color cd-dark
+    border none
+    width 100%
+    text-align: center
+    margin-top 7px
+
+input:focus
+    padding: 7px
+    background-color cd-dark
+
+
+/*==========================================================
+General Tag Styles
+==========================================================*/
+.content
+    margin auto
+    width 100%
+    padding-left: mobile-side-padding
+    padding-right: mobile-side-padding
+    box-sizing: border-box
+
+paddingless-content-width = (max-content-width + (2 * mobile-side-padding))
+@media screen and (min-width: paddingless-content-width)
+    .content
+        width max-content-width
+        padding-left: 0
+        padding-right: 0

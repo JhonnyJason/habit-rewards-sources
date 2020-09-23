@@ -1,0 +1,3 @@
+[submodule "source/buttonstylemodule"]
+	path = source/buttonstylemodule
+	url = git@github.com:JhonnyJason/pwa-sources-buttonstylemodule.git

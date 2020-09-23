@@ -1,0 +1,15 @@
+//- manualaddframe structure
+extends ../slideinframemodule/slideinframe.pug
+block content
+    #manualaddframe-content
+        h1 Add a score manually!
+        h1#current-score-display
+        h2 +
+        include ../pointaddmodule/pointadd.pug
+
+        //- input#manual-score-update-input(type="number" value="0")
+        //- #add-button-container
+        //-     #button-plus1.add-button.click-button +1
+        //-     #button-plus2.add-button.click-button +2
+        //-     #button-plus5.add-button.click-button +5
+        //-     #button-plus10.add-button.click-button +10
