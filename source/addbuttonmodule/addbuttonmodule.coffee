@@ -10,18 +10,18 @@ print = (arg) -> console.log(arg)
 #endregion
 
 ############################################################
-newDeedPage = null
+newHabitPage = null
 
 ############################################################
 addbuttonmodule.initialize = () ->
     log "addbuttonmodule.initialize"
-    newDeedPage = allModules.newdeedpagemodule
+    newHabitPage = allModules.newhabitpagemodule
     addbutton.addEventListener("click", addbuttonClicked)
     return
 
 
 ############################################################
-addbuttonClicked = -> newDeedPage.slideIn()
+addbuttonClicked = -> newHabitPage.slideIn()
 
 
 module.exports = addbuttonmodule

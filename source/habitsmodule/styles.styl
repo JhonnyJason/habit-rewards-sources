@@ -1,18 +1,18 @@
-// deeds styles
+// habits styles
 
 add-icon-size = 24px
-deed-size = 150px
-deed-gap = 24px
+habit-size = 150px
+habit-gap = 24px
 
-#deedview-hidden-template
+#habitview-hidden-template
     display none
 
-#deeds
+#habits
     user-select none
     display grid
-    gap: deed-gap
-    grid-template-columns: repeat(auto-fit, deed-size)
-    grid-template-rows: repeat(auto-fit, deed-size)
+    gap: habit-gap
+    grid-template-columns: repeat(auto-fit, habit-size)
+    grid-template-rows: repeat(auto-fit, habit-size)
     justify-content: center
     h1 
         position absolute
@@ -21,24 +21,24 @@ deed-gap = 24px
         box-sizing: border-box
         left 0
         top header-height * 2
-    .deed-inner
+    .habit-inner
         pointer-events: none
 
 
-.deed
+.habit
     position relative
     border-radius 7px
     padding 7px
     box-sizing: border-box
-    height deed-size
-    width deed-size
+    height habit-size
+    width habit-size
     margin auto
     background-color alpha(cd-bright, 0.82)
     color cd-dark
     font-weight: bold
 
 
-.deed-inner
+.habit-inner
     position absolute
     top 50%
     left 50%
@@ -52,7 +52,7 @@ deed-gap = 24px
     top 0
     right 0
     color cd-flash
-    // width: deed-size
-    // height deed-size
+    // width: habit-size
+    // height habit-size
     width: add-icon-size
     height add-icon-size

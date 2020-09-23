@@ -10,11 +10,11 @@ debugmodule.modulesToDebug =
     unbreaker: true
     # authmodule: true
     # configmodule: true
-    # darlingspagemodule: true
-    # deedsmodule: true
-    # editdeedpagemodule: true
+    # habitsmodule: true
+    # edithabitpagemodule: true
     # encryptionmodule: true
     # networkmodule: true
+    scoremodule: true
     # secretsmodule: true
     # slideinframemodule: true
     # settingspagemodule: true

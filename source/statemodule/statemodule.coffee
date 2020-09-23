@@ -11,18 +11,15 @@ print = (arg) -> console.log(arg)
 
 ############################################################
 defaultState =
-    darlingAddress: ""
-    darlingScore: ""
-    darlingIsConnected: false
-    myScore: ""
+    privateScore: ""
     secretManagerURL: "https://secrets.extensivlyon.coffee"
     # secretManagerURL: "https://localhost:6999" 
     dataManagerURL: "https://data.extensivlyon.coffee"
     # dataManagerURL: "https://localhost:6999" 
     secretKeyHex: ""
     publicKeyHex: ""
-    nextDeedId: "0"
-    deedIds: []
+    nextHabitId: "0"
+    habitIds: []
 
 
 ############################################################

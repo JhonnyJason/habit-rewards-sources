@@ -1,15 +1,13 @@
 import addbuttonmodule from "./addbuttonmodule"
 import authmodule from "./authmodule"
 import configmodule from "./configmodule"
-import darlingspagemodule from "./darlingspagemodule"
 import debugmodule from "./debugmodule"
-import deedsmodule from "./deedsmodule"
-import editdeedpagemodule from "./editdeedpagemodule"
+import edithabitpagemodule from "./edithabitpagemodule"
 import encryptionmodule from "./encryptionmodule"
+import habitsmodule from "./habitsmodule"
 import headermodule from "./headermodule"
-import manualaddframemodule from "./manualaddframemodule"
 import networkmodule from "./networkmodule"
-import newdeedpagemodule from "./newdeedpagemodule"
+import newhabitpagemodule from "./newhabitpagemodule"
 import pointaddmodule from "./pointaddmodule"
 import scoremodule from "./scoremodule"
 import secretsmodule from "./secretsmodule"
@@ -22,15 +20,13 @@ Modules = {
     addbuttonmodule,
     authmodule,
     configmodule,
-    darlingspagemodule,
     debugmodule,
-    deedsmodule,
-    editdeedpagemodule,
+    edithabitpagemodule,
     encryptionmodule,
+    habitsmodule,
     headermodule,
-    manualaddframemodule,
     networkmodule,
-    newdeedpagemodule,
+    newhabitpagemodule,
     pointaddmodule,
     scoremodule,
     secretsmodule,

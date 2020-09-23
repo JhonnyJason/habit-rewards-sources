@@ -108,7 +108,7 @@ settingspagemodule.displayDataManagerURL = (url) ->
 
 ############################################################
 settingspagemodule.slideOut = ->
-    log "darlingspage.slideOut"
+    log "settingspagemodule.slideOut"
     slideinModule.slideoutForContentElement(settingspageContent)
     return
 

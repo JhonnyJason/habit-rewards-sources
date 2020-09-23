@@ -13,7 +13,6 @@ print = (arg) -> console.log(arg)
 #region localModules
 state = null
 network = null
-darlingsPage = null
 
 #endregion
 
@@ -28,13 +27,14 @@ scoremodule.initialize = () ->
 #region exposedFunctions
 scoremodule.addScore = (score) ->
     log "scoremodule.addScore"
-    return unless state.load("darlingAddress")
 
-    darlingScore = state.load("darlingScore")
-    newScoreNumber = parseInt(score) + parseInt(darlingScore)
+    privateScore = state.load("privateScore")
+        
+    newScoreNumber = parseInt(score) + parseInt(privateScore)
     newScore = "" + newScoreNumber
-
-    state.save("darlingScore", newScore)
+    
+    if isNaN(newScore) then newScore = 0
+    state.save("privateScore", newScore)
     return
 
 #endregion

@@ -17,18 +17,16 @@ headermodule.initialize = ->
     log "headermodule.initialize"
     state = allModules.statemodule
 
-    headerLeft.addEventListener("click", allModules.darlingspagemodule.slideIn)
-    headerCenter.addEventListener("click", allModules.manualaddframemodule.slideIn)
     headerRight.addEventListener("click", allModules.settingspagemodule.slideIn)
 
     syncScoreFromState()
-    state.addOnChangeListener("darlingScore", syncScoreFromState)
+    state.addOnChangeListener("privateScore", syncScoreFromState)
     return
     
 ############################################################
 syncScoreFromState = ->
-    score = state.load("darlingScore")
-    darlingScoreDisplay.textContent = score
+    score = state.load("privateScore")
+    privateScoreDisplay.textContent = score
     return
 
 module.exports = headermodule
