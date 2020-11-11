@@ -15,9 +15,8 @@ window.onload = ->
 ############################################################
 appStartup = ->
     try
-        registerServiceWorker()
-        await Modules.authmodule.startupCheck()
-        await Modules.secretsmodule.updateSecrets()
+        # registerServiceWorker()
+        await Modules.appcoremodule.startUp()
     catch err
         errorMessage = """
             Exception in App Startup!

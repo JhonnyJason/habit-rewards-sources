@@ -10,7 +10,6 @@ indexdomconnect.initialize = () ->
     global.secretManagerInput = document.getElementById("secret-manager-input")
     global.dataManagerInput = document.getElementById("data-manager-input")
     global.addbutton = document.getElementById("addbutton")
-    global.content = document.getElementById("content")
     global.habitviewHiddenTemplate = document.getElementById("habitview-hidden-template")
     global.habits = document.getElementById("habits")
     global.privateScoreDisplay = document.getElementById("private-score-display")

@@ -12,7 +12,6 @@ print = (arg) -> console.log(arg)
 ############################################################
 #region localModules
 state = null
-network = null
 
 #endregion
 

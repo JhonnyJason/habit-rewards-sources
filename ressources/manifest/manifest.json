@@ -1,5 +1,5 @@
 {
-  "name": "Habit Rewards",
+  "name": "EasyHabits",
   "short_name": "Habits",
   "icons": [
     {
@@ -16,6 +16,6 @@
   "lang": "en-US",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#113137",
-  "theme_color": "#113137"
+  "background_color": "#000000",
+  "theme_color": "#ffffff"
 }
