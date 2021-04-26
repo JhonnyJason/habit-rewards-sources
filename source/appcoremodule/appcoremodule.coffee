@@ -66,7 +66,7 @@ onPrivateScoreChanged = ->
         log "state.get('privateScore'): "+state.get("privateScore")
         return
     
-    log "no client"
+    log "with client"
     log "privateScore: "+privateScore
     log "state.get('privateScore'): "+state.get("privateScore")
         

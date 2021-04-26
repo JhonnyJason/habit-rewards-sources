@@ -11,49 +11,32 @@ print = (arg) -> console.log(arg)
 
 ############################################################
 #region localMOdules
-utl = null
 state = null
 slideinModule = null
 
 #endregion
 
-############################################################
-idContent = null
 
 ############################################################
 settingspagemodule.initialize = () ->
     log "settingspagemodule.initialize"
-    utl = allModules.utilmodule
     state = allModules.statemodule
     slideinModule = allModules.slideinframemodule
+
     # settingspageContent.
     slideinModule.wireUp(settingspageContent, clearContent, applyContent)
 
-    ##for debugging    
-    # settingspagemodule.slideIn()
 
-    idContent = idDisplay.getElementsByClassName("display-frame-content")[0]
-    idDisplay.addEventListener("click", idDisplayClicked)
-
-    syncIdFromState()
     syncSecretManagerURLFromState()
     syncDataManagerURLFromState()
-    state.addOnChangeListener("publicKeyHex", syncIdFromState)
     state.addOnChangeListener("secretManagerURL", syncSecretManagerURLFromState)
     state.addOnChangeListener("dataManagerURL", syncDataManagerURLFromState)
     return
 
 ############################################################
 #region internalFunctions
-idDisplayClicked = ->
-    log "idDisplayClicked"
-    utl.copyToClipboard(idContent.textContent)
-    return
-
-############################################################
 clearContent = ->
     log "clearContent"
-    syncIdFromState()
     syncSecretManagerURLFromState()
     syncDataManagerURLFromState()
     return
@@ -68,12 +51,6 @@ applyContent = ->
     return
 
 ############################################################
-syncIdFromState = ->
-    log "syncIdFromState"
-    idHex = state.load("publicKeyHex")
-    settingspagemodule.displayId(idHex)
-    return
-
 syncSecretManagerURLFromState = ->
     log "syncSecretManagerURLFromState"
     secretManagerURL = state.load("secretManagerURL")
@@ -90,11 +67,6 @@ syncDataManagerURLFromState = ->
 
 ############################################################
 #region exposedFunctions
-settingspagemodule.displayId = (idHex) ->
-    log "settingspagemodule.displayId"
-    idContent.textContent = "0x" + idHex
-    return
-
 settingspagemodule.displaySecretManagerURL = (url) ->
     log "settingspagemodule.displaySecretManager"
     secretManagerInput.value = url

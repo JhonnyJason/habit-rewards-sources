@@ -8,7 +8,7 @@ debugmodule.initialize = () ->
 #####################################################
 debugmodule.modulesToDebug =
     unbreaker: true
-    appcoremodule: true
+    # appcoremodule: true
     # authmodule: true
     # configmodule: true
     # habitsmodule: true
