@@ -4,3 +4,18 @@
 [submodule "source/statemodule"]
 	path = source/statemodule
 	url = git@github.com:JhonnyJason/pwa-sources-statemodule.git
+[submodule "source/slideinframemodule"]
+	path = source/slideinframemodule
+	url = git@github.com:JhonnyJason/pwa-sources-slideinframemodule.git
+[submodule "source/accountsettingsmodule"]
+	path = source/accountsettingsmodule
+	url = git@github.com:JhonnyJason/pwa-sources-accountsettingsmodule.git
+[submodule "source/messageboxmodule"]
+	path = source/messageboxmodule
+	url = git@github.com:JhonnyJason/pwa-sources-messageboxmodule.git
+[submodule "source/qrreadermodule"]
+	path = source/qrreadermodule
+	url = git@github.com:JhonnyJason/pwa-sources-qrreadermodule.git
+[submodule "source/qrdisplaymodule"]
+	path = source/qrdisplaymodule
+	url = git@github.com:JhonnyJason/pwa-sources-qrdisplaymodule.git
