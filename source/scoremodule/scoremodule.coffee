@@ -26,14 +26,17 @@ scoremodule.initialize = () ->
 #region exposedFunctions
 scoremodule.addScore = (score) ->
     log "scoremodule.addScore"
+    privateScore = state.get("privateScore")
 
-    privateScore = state.load("privateScore")
-        
-    newScoreNumber = parseInt(score) + parseInt(privateScore)
+    score = parseInt(score)
+    if isNaN(score) then score = 0
+    privateScore = parseInt(privateScore)
+    if isNaN(privateScore) then privateScore = 0
+
+    newScoreNumber = score + privateScore
     newScore = "" + newScoreNumber
     
-    if isNaN(newScore) then newScore = 0
-    state.save("privateScore", newScore)
+    state.set("privateScore", newScore)
     return
 
 #endregion

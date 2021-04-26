@@ -8,13 +8,14 @@ debugmodule.initialize = () ->
 #####################################################
 debugmodule.modulesToDebug =
     unbreaker: true
+    appcoremodule: true
     # authmodule: true
     # configmodule: true
     # habitsmodule: true
     # edithabitpagemodule: true
     # encryptionmodule: true
     # networkmodule: true
-    scoremodule: true
+    # scoremodule: true
     # secretsmodule: true
     # slideinframemodule: true
     # settingspagemodule: true
