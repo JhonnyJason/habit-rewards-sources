@@ -1,8 +1,10 @@
 module.exports = {
     getDependencies: () => {
         return {
-            "noble-ed25519": "^1.0.2",
-            "secret-manager-client": "0.0.1"
+            "mustache": "^4.2.0",
+            "qr-scanner": "^1.2.0",
+            "secret-manager-client": "0.0.2",
+            "vanillaqr": "^1.0.0"        
         }
     }
 }
